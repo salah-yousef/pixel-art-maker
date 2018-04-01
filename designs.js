@@ -17,12 +17,12 @@ let Width    =    document.getElementById('inputWidth').value;
 let table    =    document.getElementById('pixelCanvas');
 
 fragment.appendChild(table); 
-var tbody = document.createElement('tbody'); 
-for (var i = 0; i<height; i++) { 
-    var tr = document.createElement('tr'); 
+let tbody = document.createElement('tbody'); 
+for (let i = 0; i<height; i++) { 
+    let tr = document.createElement('tr'); 
     tbody.appendChild(tr);
-    for (var j = 0; j<Width; j++) {
-        var tdElement = document.createElement('td');
+    for (let j = 0; j<Width; j++) {
+        let tdElement = document.createElement('td');
         tdElement.setAttribute("onclick", "addColor(this)"); 
         tdElement.setAttribute("ondblclick", "removeColor(this)"); 
         tr.appendChild(tdElement); 
