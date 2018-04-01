@@ -1,5 +1,3 @@
-// Select color input
-// Select size input
 
 // When size is submitted by the user, call makeGrid()
 document.getElementById("sizePicker").addEventListener("submit", function(e){ 
@@ -13,7 +11,7 @@ if(oldTable != null)
     oldTable.remove();
 
 const fragment = document.createDocumentFragment();
-
+// Select size input
 let height   =    document.getElementById('inputHeight').value;
 let Width    =    document.getElementById('inputWidth').value;
 let table    =    document.getElementById('pixelCanvas');
@@ -36,6 +34,7 @@ document.body.appendChild(fragment); // reflow and repaint here -- once!
 
 }
 
+// Select color input
 function addColor(myColor) {
     myColor.style.backgroundColor = document.getElementById('colorPicker').value;    
 }
